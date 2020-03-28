@@ -38,18 +38,12 @@ const reverseList = function(head) { // time: O(n), space: O(n) where n is the n
 
 // REVISED RECURSIVE ---------- ----------
 
-const reverseList = function(head) { // time: O(n) where n is the number of elements in the list, space: O(1)
-  if (head === null) return head
-  let newNext = null
-  let oldNext = head.next
-  while (head.next !== null) {
-      head.next = newNext
-      newNext = head
-      head = oldNext
-      oldNext = head.next
-  }
-  head.next = newNext
-  return head
+const reverseList = function(head) { // time: O(n), space: O(n) where n is the number of elements in the list
+  if (head === null || head.next === null) return head
+  const newHead = reverseList(head.next)
+  head.next.next = head
+  head.next = null
+  return newHead
 };
 
 // ORIGINAL RECURSIVE ---------- ----------
