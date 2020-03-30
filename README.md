@@ -1,3 +1,9 @@
+https://leetcode.com/problems/linked-list-cycle/submissions/
+
+https://leetcode.com/problems/single-number/solution/
+
+https://leetcode.com/problems/climbing-stairs/solution/
+
 https://leetcode.com/problems/valid-palindrome/
 
 https://leetcode.com/problems/same-tree/
